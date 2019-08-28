@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/main/ros_ws/src/darknet_ros/darknet/install/setup.sh

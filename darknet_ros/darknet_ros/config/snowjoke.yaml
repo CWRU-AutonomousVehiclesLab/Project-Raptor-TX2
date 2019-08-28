@@ -1,0 +1,12 @@
+yolo_model:
+
+  config_file:
+    name: snow_joke.cfg
+  weight_file:
+    name: snow_joke.weights
+  threshold:
+    value: 0.5
+  detection_classes:
+    names:
+      - GreenPost
+      - YellowPost

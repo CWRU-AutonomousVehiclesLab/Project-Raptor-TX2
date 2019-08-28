@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- tf publisher -->
+    <!-- Baselink 2 lidar-->
+    <node pkg="tf" type="static_transform_publisher" name="full_laser2baselink" args="0 0 0.9144 1.54 0 0 base_link full_lidar 100">        
+
+    </node>
+    
+    <!--Baselink 2 scene watcher-->
+    <node pkg="tf" type="static_transform_publisher" name="scene_watcher2baselink" args="0.1 0 0.7874 0 0 0 base_link scene_watcher_link 100">        
+
+    </node>
+
+    <!--Baselink 2 sick lidar -->
+    <node pkg="tf" type="static_transform_publisher" name="sick_lidar2baselink" args="1.3462 0 0 0 0 0 base_link sick_lidar 100">        
+
+    </node>
+
+    <!--Baselink 2 lane watcher-->
+    <node pkg="tf" type="static_transform_publisher" name="lane_watcher2baselink" args="1.3462 0 0.1778 0 0.26 0 base_link lane_watcher_link 100">        
+
+    </node>
+
+    <!--Baselink 2 road watcher-->
+    <node pkg="tf" type="static_transform_publisher" name="road_watcher2baselink" args="1.3462 0 0.127 0 0.52 0 base_link road_watcher_link 100">        
+
+    </node>        
+
+</launch>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find sick_tim)/launch/sick_tim551_2050001.launch">
+        <remap from="/scan" to="/sick_lidar"/>
+    </include>
+
+    <include file="$(find raptor_tf)/launch/robot_tf.launch">
+        
+    </include>
+
+</launch>

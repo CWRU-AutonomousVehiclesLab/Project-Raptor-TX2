@@ -1,0 +1,11 @@
+yolo_model:
+
+  config_file:
+    name: red_cones.cfg
+  weight_file:
+    name: red_cones.weights
+  threshold:
+    value: 0.1
+  detection_classes:
+    names:
+      - red cone
